@@ -24,11 +24,13 @@
 
 body {
   background-color: var(--light-gray);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  // max-width: var(--desktop-width);
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 .qr__container {
@@ -61,7 +63,7 @@ body {
     overflow: hidden;
     padding: 20px;
     text-align: center;
-    
+
     .qr__text__title,
     .qr__text__paragraph {
       font-family: var(--family);
@@ -75,8 +77,8 @@ body {
     }
 
     .qr__text__paragraph {
-        font-size: var(--paragraph-size);
-        color: var(--grayish-blue);
+      font-size: var(--paragraph-size);
+      color: var(--grayish-blue);
     }
   }
 }

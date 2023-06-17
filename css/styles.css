@@ -23,6 +23,8 @@
 
 body {
   background-color: var(--light-gray);
+}
+body main {
   display: flex;
   justify-content: center;
   align-items: center;
