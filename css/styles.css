@@ -36,18 +36,17 @@ body main {
   flex-direction: column;
   align-items: center;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 15px;
   width: 100%;
-  max-width: 300px;
+  max-width: 295px;
 }
 .qr__container .qr__image__content .qr__figure {
   margin: 0;
 }
 .qr__container .qr__image__content .qr__figure img {
-  border-radius: 10px;
+  border-radius: 15px;
   width: 100%;
-  max-width: max-content;
 }
 .qr__container .qr__text__content {
   display: flex;
@@ -55,7 +54,7 @@ body main {
   gap: 10px;
   justify-content: center;
   overflow: hidden;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 .qr__container .qr__text__content .qr__text__title,
