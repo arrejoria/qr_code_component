@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("/font/Outfit-VariableFont_wght.ttf") format("truetype");
+  /* o puedes usar la URL de la fuente externa */
+  /* src: url('https://url-de-tu-fuente.ttf') format('truetype'); */
+  /* Agrega otros formatos de fuente si los tienes (eot, woff, etc.) */
+}
+
+:root {
+  /* Container Dimensions */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  /* Colors */
+  --light-gray: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  /* Fonts */
+  --paragraph-size: 15px;
+  --family: "Outfit";
+  --primary-weight: 700;
+  --secondary-weight: 400;
+}
+
+body {
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  max-width: var(--desktop-width);
+}
+
+.qr__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+
+  .qr__image__content {
+    .qr__figure {
+      margin: 0;
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+        max-width: max-content;
+      }
+    }
+  }
+
+  .qr__text__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    
+    .qr__text__title,
+    .qr__text__paragraph {
+      font-family: var(--family);
+      margin: 0;
+    }
+
+    .qr__text__title {
+      font-size: 1.4rem;
+      font-weight: var(--primary-weight);
+      color: var(--dark-blue);
+    }
+
+    .qr__text__paragraph {
+        font-size: var(--paragraph-size);
+        color: var(--grayish-blue);
+    }
+  }
+}
